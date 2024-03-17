@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   webpack: (config, { isServer }) => {
 
     config.module.rules.push({

@@ -25,7 +25,7 @@ const Login: React.FC = () => {
                             <div className={styles.close} id="close_btn" onClick={closePopup}>&times;</div>
                             <h1>Login Now</h1>
                             <div className={styles.form_group}>
-                                <form method="POST" action="verify.php">
+                                <form method="POST" action="/my-feed">
                                     <input type="text" placeholder="Enter your email" id="Email" name="Email" className={styles.popup_input} autoComplete="off" required />
                                     <input type="password" name="Pword" placeholder="Enter your password" className={styles.popup_input} required />
                                     <button className={styles.btn} name="login">Login</button>

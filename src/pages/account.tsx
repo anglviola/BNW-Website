@@ -23,7 +23,6 @@ const Account: React.FC<{ user: string }> = ({ user }) => {
                     <p className={styles.email}>{userData.Email}</p>
                     <a
                         className={`${styles.acc_btn} ${styles.edit}`}
-                        href={`account.php?edit_id=${userData.user_id}`}
                         title="Click for edit"
                         onClick={() => confirm('Do you want to edit this post?')}
                     >
@@ -31,7 +30,6 @@ const Account: React.FC<{ user: string }> = ({ user }) => {
                     </a>
                     <a
                         className={`${styles.acc_btn} ${styles.del}`}
-                        href={`?delete_id=${userData.user_id}`}
                         title="Click for delete"
                         onClick={() => confirm('Are you sure you want to delete this account?')}
                     >

@@ -25,7 +25,7 @@ const Register: React.FC = () => {
                             <div className={styles.close} id="close_btn" onClick={closePopup}>&times;</div>
                             <h1>Registration Form</h1>
                             <div className={styles.form_group}>
-                                <form name="register" method="POST" action="register.php">
+                                <form name="register" method="POST" action="/login">
                                     <input type="text" name="Firstname" placeholder="Enter your first name" className={styles.popup_input} autoComplete="off" required />
                                     <input type="text" name="Lastname" placeholder="Enter your last name" className={styles.popup_input} autoComplete="off" required />
                                     <input type="email" name="Email" placeholder="Enter your email" className={styles.popup_input} autoComplete="off" required />
